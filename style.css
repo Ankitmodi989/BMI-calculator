@@ -1,0 +1,111 @@
+*{
+    margin: 0;
+    padding: 0;
+  }
+  section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: #3586ff;
+    overflow: hidden;
+  }
+  section .air{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background: url(https://1.bp.blogspot.com/-xQUc-TovqDk/XdxogmMqIRI/AAAAAAAACvI/AizpnE509UMGBcTiLJ58BC6iViPYGYQfQCLcBGAsYHQ/s1600/wave.png);
+    background-size: 1000px 100px
+  }
+  section .air.air1{
+    animation: wave 30s linear infinite;
+    z-index: 1000;
+    opacity: 1;
+    animation-delay: 0s;
+    bottom: 0;
+  }
+  section .air.air2{
+    animation: wave2 15s linear infinite;
+    z-index: 999;
+    opacity: 0.5;
+    animation-delay: -5s;
+    bottom: 10px;
+  }
+  section .air.air3{
+    animation: wave 30s linear infinite;
+    z-index: 998;
+    opacity: 0.2;
+    animation-delay: -2s;
+    bottom: 15px;
+  }
+  section .air.air4{
+    animation: wave2 5s linear infinite;
+    z-index: 997;
+    opacity: 0.7;
+    animation-delay: -5s;
+    bottom: 20px;
+  }
+  @keyframes wave{
+    0%{
+      background-position-x: 0px; 
+    }
+    100%{
+      background-position-x: 1000px; 
+    }
+  }
+  @keyframes wave2{
+    0%{
+      background-position-x: 0px; 
+    }
+    100%{
+      background-position-x: -1000px; 
+    }
+  }
+
+.bmi{
+    background-color: rgb(242, 232, 232);
+    height: 550px;
+    width: 400px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 3px 4px rgb(238, 231, 231);
+}
+.BMI{
+    height: 50px;
+    margin: 5px;
+    padding: 7px 5px 3px 10px;
+    background-color: white;
+    border-radius: 5px;
+    
+}
+.form{
+    height: 400px;
+    background-color:white ;
+    border-radius: 5px;
+    margin-left:5px ;
+    margin-right: 5px;
+}
+p{
+    margin: 8px;
+    color: #6e6b6b;
+    font-size: 20px;
+}
+#result{
+    font-size: 20px;
+    padding: 10px 0px 0px 150px;
+}
+input{
+    font-size: 25px;
+    margin: 5px;
+   
+}
+button{
+    margin: 10px 0px 5px 120px;
+    height: 50px;
+    width: 100px;
+    font-size: large;
+    border-radius: 5px;
+}
